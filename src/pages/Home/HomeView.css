@@ -1,0 +1,29 @@
+.home {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.home__empty {
+  color: #8888a0;
+  font-size: 16px;
+}
+
+.home__loading {
+  color: #8888a0;
+  font-size: 16px;
+}
+
+.home__error {
+  color: #ff6b6b;
+  font-size: 15px;
+}
+
+.home__movie-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}

@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "favourites": {
+      ".read": true,
+      ".write": true,
+      "$imdbID": {
+        ".validate": "newData.hasChildren(['imdbID', 'Title', 'Year', 'Poster', 'Type']) && newData.child('imdbID').isString() && newData.child('imdbID').val() === $imdbID && newData.child('Title').isString() && newData.child('Year').isString() && newData.child('Poster').isString() && newData.child('Type').isString()"
+      }
+    }
+  }
+}
